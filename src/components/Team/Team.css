@@ -14,6 +14,12 @@
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .team-img {
@@ -28,17 +34,64 @@
 
 .team-info {
     padding: 20px;
+    position: relative;
+    /* Fixed height to accommodate absolute positioned icons without changing layout */
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .team-info h5 {
     font-size: 16px;
-    color: var(--primary-purple);
+    color: var(--primary-purple, #6a0dad);
     margin-bottom: 5px;
+    margin-top: 0;
 }
 
 .team-info p {
     font-size: 13px;
     color: #777;
+    margin: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.team-info:hover p {
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(10px);
+}
+
+.team-info:hover .social-icons {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(0.8);
 }
 
 @media (max-width: 992px) {
