@@ -34,7 +34,6 @@
     align-items: center;
     width: 32px;
     height: 32px;
-    border: 1px solid var(--primary-purple);
     border-radius: 4px;
     padding: 6px;
 }
