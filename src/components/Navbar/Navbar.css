@@ -10,6 +10,8 @@
     display: flex;
     list-style: none;
     height: 100%;
+    width: 100%;
+    align-items: center;
 }
 
 .navbar-nav li {
@@ -32,6 +34,26 @@
 .navbar-nav li a:hover,
 .navbar-nav li a.active {
     background-color: var(--secondary-purple);
+}
+
+.search-icon-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.search-logo {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+.search-icon-container:hover .search-logo {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
