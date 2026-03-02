@@ -1,0 +1,24 @@
+.brands-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.brands-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand-placeholder {
+    color: #999;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .brands-container {
+        justify-content: center;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,41 @@
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.industry-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.industry-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(92, 27, 150, 0.1);
+    color: var(--primary-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.industry-text h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.industry-text p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .industries-grid {
+        grid-template-columns: 1fr;
+    }
+}

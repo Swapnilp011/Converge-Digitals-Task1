@@ -1,0 +1,29 @@
+.cta-banner {
+    background-color: var(--dark-purple);
+    padding: 20px 0;
+}
+
+.cta-banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-banner-text h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cta-banner-text p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .cta-banner-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
