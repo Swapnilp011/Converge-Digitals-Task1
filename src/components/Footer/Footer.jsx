@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css';
+import instalogo from '../../assets/instalogo.png';
+import facebooklogo from '../../assets/facebooklogo.png';
+import linkedinlogo from '../../assets/linkedinlogo.png';
 
 const Footer = () => {
     return (
@@ -44,6 +47,11 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <p>© 2026 Consuloan. All rights reserved. www.consuloan.com</p>
+                    <div className="footer-socials">
+                        <img src={facebooklogo} alt="Facebook" />
+                        <img src={instalogo} alt="Instagram" />
+                        <img src={linkedinlogo} alt="LinkedIn" />
+                    </div>
                 </div>
             </div>
         </footer>
