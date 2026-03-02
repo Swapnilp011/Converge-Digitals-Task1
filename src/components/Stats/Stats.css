@@ -19,6 +19,20 @@
     gap: 30px;
 }
 
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.icon img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
 .stat-item h3 {
     font-size: 48px;
     margin: 10px 0;
